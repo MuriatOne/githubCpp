@@ -1,0 +1,77 @@
+Cast
+convertir un type d'objet static_cast<int>(val) => exemple convertir en entier
+trouver le type d'objet d'une variable typeid(val).name()
+
+char_1
+Type char, Chaîne de caractère, extraire nombre de caractère dans une châine
+
+char2 
+Type string, getline(cin,phrase) => mettre le contenu dans une chaîne de caractère
+
+char_3
+cin.ignore(), pour initialiser une mémoire alloué précédemment
+
+char_4
+Utilisation d'une méthode simple d'affichage() avec possibilité de surcharge (deux méthodes du même nom avec des argument très similaire l'un char l'autre chaîne)
+
+char_5
+Utilisation de méthode surchargée. encrypter(char*) dectypter(char*)
+
+structure_1
+Utilisation de pointeur, dans une structure. C'est comme un tableau. Chaque membre du tableau se comporte comme un pointeur.
+struct Rectangle x = {11,12}; // le variable x 
+struct Rectangle* p_x = &x; // le pointeur  correspondant qui loge le tableau x, &x c'est l'adresse de mémoire de la variable x
+Affectation par pointeur (2 façons différentes), affectation par variable
+
+tableau1
+Concaténation des chaîne de caractères de type string
+
+tableau2
+Utilisation de Array avec la boucle de for pour remplir le array. On peut afficher et manipuler les valeur contenant le tableau array
+
+tableau3
+ici on utilise comme un tableau de caractères pour créer un mot. Chaîne de caractère est un tableau, en allouant d'abord une case de mémoire char chaine_caractere[10]
+
+Vector_1
+Ajouter une valeur dans un tableau.
+Une liste de température sous forme de 
+vector <double> temperature = {10.3, 17.7, -3.2, 10.0};
+Ajouter une valeur supplémentaire à une liste à la fin de celle-ci
+
+Pointeur_1
+L'adresse mémoire d'une variable peut être trouvée par la commande &variable
+
+Pointeur_2
+Ici il y a Deux types de variables.
+1. elle contient des valeur de type quelconque
+2. elle contient des adresse de mémoire 
+exemple 
+int nombre = 206 => c'est une variable
+int * p_nombre  => c'est l'entier que contient l'adresse de la  mémoire
+int * p_nombre = 0 => c'est l'initialisation de la case de mémoire en affectant la valeur 0 à l'intérieur
+ou une autre façon d'écrire int* p_nombre(0)
+p_nombre = &nombre => c'est affectation de l'adresse de mémoire dans la variable p_nombre - la valeur  de cette variable est une adresse de mémoire
+
+Pointeur_3
+Utilisation de switch. Ici on exploite la possibilité de comparer si l'adresse de mémoire connue correspond à celle qu'on lui donne (par l'utilisateur) 
+
+Pointeur_4
+Dans la manipulation de la mémoire, il est possible d'imposer l'adresse de mémoire pour une valeur donnée. Pour ce faire il faut allouer une mémoire, mais avant d'allouer ce mémoire il faut initialiser avec une valeur, car une case de mémoire vide est impossible. 
+Voici la procédure
+int * p_valeur = 0;
+p_valeur = new int; ici on impose que ce mémoire là qui contiendra la valeur.
+*p_valeur correspond donc à la valeur qui contiendra cette case de mémoire. 
+L'avantage est de pouvoir vider ce mémoire en faisant delete p_valeur à la fin du programme.
+
+Enum_1
+On peut créer une liste d'objet du même type mais sous une forme très simplifié. Enum .
+C'est une class dont le nombre d'objets instancié est limité et restreint et prédéfini.
+Par exemple je veux créer une liste de spécification de pipes. Dans cette liste on peut trouver les nom de spec.
+enum spec {P8104, P8105, P3600};
+
+For_1
+Exemple utilisation de la boucle for
+
+poo-1
+Premier approche de POO. Pour apprentissage, le constructeur se trouve dans le programme main()
+
