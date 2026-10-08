@@ -20,7 +20,7 @@ int main() {
     std::cout << (age < 18 || salaire > 2500) << std::endl;
     std::cout << (salaire>= 2000) << std::endl;
     printf("\n");
-    printf("---4\n");
+    printf("---4---c'est un test---\n");
     std::cout << !(age == 15 && salaire > 5000) << std::endl;
     return 0;
 }
